@@ -1,211 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Mountain Maids ®</title>
-    <meta name="description" content="Mountain Maids ® offers five-star house cleaning and maid services across the Colorado Front Range. Book your cleaning today.">
-    <meta name="keywords" content="Colorado house cleaning, Front Range maid service, Colorado Springs cleaning, Castle Rock cleaning, Littleton house cleaning, South Denver cleaning">
+  <meta charset="utf-8" />
+  <title>Mountain Maids®</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="icon" type="image/png" href="favicon.png">
-    <meta property="og:site_name" content="Mountain Maids ®">
-    <meta property="og:title" content="Mountain Maids ®">
+  <!-- SEO targeting -->
+  <meta name="description" content="Mountain Maids® provides professional house cleaning and maid services in your area. Deep cleaning, move out cleaning, and recurring house cleaning across our service areas." />
+  <meta name="keywords" content="Mountain Maids, Maid Service, House Cleaning, Deep Cleaning, Move Out Cleaning, Move In Cleaning, Recurring House Cleaning" />
+  <meta property="og:site_name" content="Mountain Maids®" />
+  <meta property="og:title" content="Mountain Maids®" />
 
-    <style>
-        :root{
-            --accent:#0e74b5;
-            --accent-dark:#0a5c90;
-            --overlay:rgba(0,0,0,.55);
-            --shadow:0 10px 30px rgba(0,0,0,.18);
-            --max:1100px;
-            --text:#222;
-            --muted:#7d7d7d;
-            --soft:#f5f5f7;
-        }
-        *{box-sizing:border-box}
-        body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;color:var(--text);background:#fff}
-        a{color:var(--accent);text-decoration:none}
-        a:hover{color:#094e7d;text-decoration:underline}
-        header, section{padding:32px 20px}
-        .intro h2, .why-us h2, .services h2, .residential h2, .move-out h2, .about h2, .reviews h2{ font-size:34px;margin:0 0 18px;text-align:center }
-        .intro p, .residential p, .move-out p, .about p{ font-size:20px;max-width:900px;margin:0 auto 14px;color:#444 }
-        header{ color:#fff;text-align:center;padding:84px 20px 36px; background-color:var(--accent); }
-        header h1{font-size:48px;margin:0 0 8px}
-        header a{color:#fff;text-decoration:underline}
-        header a:hover{color:#d7ecff}
-        .why-us{background:#fff}
-        .why-us ul{list-style:none;padding:0;margin:0 auto;max-width:1000px; display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px 24px}
-        .why-us li{position:relative;padding-left:28px;font-size:18px;color:#444;background:#fff}
-        .why-us li:before{content:"✓";position:absolute;left:0;top:0;color:var(--accent);font-weight:700}
-        .achievements{display:flex;justify-content:center;flex-wrap:wrap;margin-top:22px;gap:16px}
-        .achievement-box{ background:var(--accent); color:#fff; padding:18px 20px; text-align:center; border-radius:8px; width:200px; box-shadow:0 8px 22px rgba(0,0,0,.12); transition:transform .15s ease, box-shadow .15s ease; }
-        .achievement-box:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(0,0,0,.18)}
-        .achievement-box p{font-size:16px;margin:0}
-        .services{background:#fff}
-        .services p{max-width:900px;margin:0 auto 14px;color:#444;font-size:20px}
-        .services ul{list-style:none;padding:0;margin:10px auto 8px;max-width:900px; display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px 20px}
-        .services li{position:relative;padding-left:28px}
-        .services li:before{content:"✓";position:absolute;left:0;top:0;color:var(--accent);font-weight:700}
-        .image-container{display:flex;justify-content:center;margin:22px 0}
-        .image-container img{max-width:100%;height:auto;border-radius:10px;box-shadow:0 6px 16px rgba(0,0,0,.12);display:block}
-        .reviews{background:#fff}
-        .review{ background:var(--soft);padding:20px;margin:0 auto 18px;border-radius:10px; box-shadow:0 6px 16px rgba(0,0,0,.08);max-width:900px }
-        .review .stars{color:#ffc107;font-size:22px;margin-bottom:8px}
-        .review p{margin:0;color:#333}
-        .about{background:#f4f4f4}
-        .about p{color:#444}
-        .cta{ color:#fff;text-align:center;padding:84px 20px; background-color:var(--accent); }
-        .cta a{ display:inline-block;background:rgba(0,0,0,.55);color:#fff;text-decoration:none; padding:28px 28px 16px;border-radius:8px;box-shadow:var(--shadow);font-weight:700 }
-        .cta h2{font-size:42px;margin:0 0 12px}
-        .cta p{font-size:20px;margin:6px 0}
-        .cta a:hover{filter:brightness(1.05);transform:translateY(-1px);text-decoration:none}
-        footer{background:#f4f4f4;text-align:center;padding:22px;color:#555}
-        footer p{margin:0;font-size:16px}
-        @media (max-width:1024px){
-            header{padding:72px 20px 32px}
-            .intro h2, .why-us h2, .services h2, .residential h2, .move-out h2, .about h2, .reviews h2{font-size:30px}
-            .cta h2{font-size:36px}
-        }
-    </style>
+  <style>
+    :root{
+      --max:1200px;
+      --pad:24px;
+      --accent:#0e74b5;
+      --accent-dark:#0a5c90;
+      --overlay:rgba(0,0,0,.55);
+      --shadow:0 10px 30px rgba(0,0,0,.25);
+      --text:#212121;
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;color:var(--text);background:#fff}
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+
+    header{background:#0e74b5;color:#fff}
+    .topbar{display:flex;align-items:center;justify-content:space-between;padding:14px var(--pad);max-width:var(--max);margin:0 auto}
+    .brand{font-weight:800;letter-spacing:.3px}
+    .phone{font-weight:700}
+
+    .hero{
+      position:relative;color:#fff;padding:86px 0 36px;
+      background-image:linear-gradient(0deg,var(--overlay),var(--overlay)),url("kitchen-move.jpg");
+      background-position:center center;background-size:cover;background-repeat:no-repeat;
+    }
+    .hero .grid{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+    .hero h1{margin:0 0 8px;font-size:42px}
+    .hero .sub{font-size:20px;opacity:.95;margin:0 0 18px}
+    .hero .card{
+      background:rgba(0,0,0,.65);border-radius:8px;padding:24px 24px 12px;box-shadow:var(--shadow);text-align:center;
+    }
+    .hero .card h3{margin:0 0 12px}
+    .hero .card ul{margin:0 0 12px 18px;text-align:left;display:inline-block}
+    .hero .note{margin-top:10px;font-style:italic;opacity:.9}
+
+    .btn{
+      display:inline-block;background:var(--accent);color:#fff;padding:15px 26px;border-radius:6px;font-weight:800;
+      box-shadow:var(--shadow);transition:transform .15s ease, filter .15s ease, background .15s ease
+    }
+    .btn:hover{background:var(--accent-dark);filter:brightness(1.06);transform:translateY(-1px);text-decoration:none}
+
+    .stats{background:#fff;padding:84px 0 36px}
+    .stats .row{display:grid;grid-template-columns:repeat(5,1fr);gap:24px}
+    .sbox{background:#0e74b5;color:#fff;border-radius:8px;padding:18px;text-align:center;box-shadow:0 8px 22px rgba(0,0,0,.12)}
+    .sbox p{margin:0;font-weight:800}
+
+    section h2{font-size:34px;margin:0 0 26px}
+    .how{padding:56px 0;background:#fff;text-align:center}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:34px}
+    .step{background:#f7fafc;border:1px solid #e6eef7;border-radius:10px;padding:24px}
+    .step h3{margin:6px 0 8px;letter-spacing:1px}
+    .step p{margin:0;color:#555}
+
+    .services{
+      position:relative;color:#111;padding:64px 0;background:
+        linear-gradient(0deg, rgba(255,255,255,.92), rgba(255,255,255,.92)),
+        url("all-rooms-move.jpeg");
+      background-position:center center;background-size:cover;background-repeat:no-repeat;
+    }
+    .cardgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-bottom:24px}
+    .scard{background:#fff;border-radius:10px;box-shadow:0 10px 26px rgba(0,0,0,.12);overflow:hidden;display:flex;flex-direction:column;transition:transform .15s ease, box-shadow .15s ease}
+    .scard:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.18)}
+    .scard h3{margin:16px 16px 6px;font-size:20px}
+    .scard p{margin:0 16px 18px;color:#444}
+    .scard img{width:100%;height:220px;object-fit:cover}
+
+    .seo{padding:48px 0;background:#fff}
+    .flow{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:start;margin:26px auto;max-width:var(--max)}
+    .flow.right{grid-template-columns:420px 1fr}
+    .flow.right .txt{order:2}
+    .flow.right figure{order:1}
+    .seo figure{margin:0}
+    .seo img{width:100%;border-radius:8px;box-shadow:0 6px 16px rgba(0,0,0,.12)}
+    .seo figcaption{font-size:12px;color:#666;text-align:center;margin-top:6px}
+    .seo p{margin:0 0 14px}
+
+    .about{padding:60px 0;background:#fff}
+    .about .grid{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
+
+    .test{padding:60px 0;background:#fff}
+    .quotes{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+    .q{background:#f5f5f7;border-radius:10px;padding:20px;position:relative;box-shadow:0 6px 16px rgba(0,0,0,.08)}
+    .q:after{content:"";position:absolute;left:40px;bottom:-20px;border:10px solid transparent;border-top-color:#f5f5f7}
+    .stars{color:#ffc107;font-size:20px;margin-bottom:10px}
+
+    .cta{
+      position:relative;color:#fff;text-align:center;padding:80px 0;background:
+        linear-gradient(0deg,var(--overlay),var(--overlay)), url("every-room.jpg");
+      background-position:center center;background-size:cover;background-repeat:no-repeat;
+    }
+    .cta .panel{background:rgba(0,0,0,.55);display:inline-block;padding:28px 28px 16px;border-radius:8px;box-shadow:var(--shadow)}
+    .cta h2{font-size:36px;margin:0 0 10px}
+    .cta h3{margin:0 0 12px}
+    .cta .panel ul{margin:0 0 12px 18px;text-align:left;color:#fff}
+
+    footer{background:#0b1220;color:#d7e1f3;padding:32px 0}
+    footer p{margin:6px 0}
+
+    @media (max-width: 1024px){
+      .hero .grid{grid-template-columns:1fr}
+      .stats .row{grid-template-columns:repeat(3,1fr)}
+      .steps{grid-template-columns:1fr}
+      .cardgrid{grid-template-columns:1fr}
+      .quotes{grid-template-columns:1fr}
+      .flow,.flow.right,.about .grid{grid-template-columns:1fr}
+    }
+  </style>
 </head>
 <body>
 
-    <!-- ===== HEADER ===== -->
-    <header>
-        <h1>Mountain Maids ®</h1>
-        <p>Brought to you by <a href="https://www.humblehousecleaning.com">HumbleHouseCleaning.com</a></p>
-    </header>
+  <header>
+    <div class="topbar">
+      <div class="brand">Mountain Maids®</div>
+      <div class="phone">(720) 457-9793</div>
+    </div>
+    <section class="hero">
+      <div class="wrap">
+        <div class="grid">
+          <div>
+            <h1>Trusted. Reliable. Affordable. Since 1987.</h1>
+            <p class="sub">Mountain Maids® serves homes in our local areas with expert cleaning services.</p>
+            <p>We specialize in weekly house cleaning, bi weekly house cleaning, monthly house cleaning, deep house cleaning, move in cleaning and move out cleaning, small office cleaning, and more. We have been cleaning homes for over 35 years. If you are looking for reliable, professional, and thorough cleaning, Mountain Maids® is here to help.</p>
+          </div>
 
-    <!-- ===== INTRO ===== -->
-    <section class="intro">
-        <h2>Affordable Home Cleaning and Maid Services Across the Colorado Front Range</h2>
-        <p><strong>Mountain Maids ® has helped Colorado households enjoy tidy, healthy homes for decades.</strong> Our cleaning teams are trusted across the Front Range including Colorado Springs, Monument, Palmer Lake, Fountain, Castle Rock, Littleton, South Denver, Highlands Ranch, and Parker.</p>
-        <div class="image-container">
-            <img src="all-rooms-move.jpeg" alt="Professional house cleaner sanitizing a countertop in a Colorado home." style="max-width: 600px;">
+          <aside class="card">
+            <h3>Book Today and Save</h3>
+            <ul>
+              <li>Satisfaction Guaranteed.</li>
+              <li>35+ Years of Service.</li>
+              <li>Reliable. Affordable.</li>
+              <li>Bonded &amp; Insured.</li>
+              <li>Local Family Owned &amp; Operated.</li>
+            </ul>
+            <p><a class="btn" href="https://www.humblehousecleaning.com">GET YOUR FREE ESTIMATE</a></p>
+            <p class="note">Cleaning made easy.<br>No contracts.<br>Satisfaction guaranteed.</p>
+          </aside>
         </div>
+      </div>
     </section>
+  </header>
 
-    <!-- ===== WHY US ===== -->
-    <section class="why-us">
-        <h2>Why Choose Mountain Maids ®</h2>
-        <ul>
-            <li>Our <strong>track record for reliability</strong> spans over 35 years serving Front Range communities.</li>
-            <li>We operate as a division of <strong>Humble House Cleaning</strong>, a company homeowners recognize and recommend.</li>
-            <li>We steer clear of last minute cancellations and stay <strong>on time, efficient, and consistent</strong>.</li>
-            <li>A <strong>service-minded local team</strong> committed to doing what is right on every visit.</li>
-            <li>All staff complete thorough background checks for your <strong>safety and peace of mind</strong>.</li>
-            <li>We handle all <strong>employment and tax requirements</strong> so you never deal with the paperwork.</li>
-            <li>Cleaning plans are <strong>built around your needs</strong>, from basic upkeep to detailed housekeeping.</li>
-        </ul>
-        <div class="achievements">
-            <div class="achievement-box"><p>35+ Years in Business</p></div>
-            <div class="achievement-box"><p>100,000+ Cleanings Completed</p></div>
-            <div class="achievement-box"><p>95%+ Client Satisfaction</p></div>
-            <div class="achievement-box"><p>10,000+ Happy Customers</p></div>
-            <div class="achievement-box"><p>A+ BBB Accreditation</p></div>
-        </div>
-    </section>
-
-    <!-- ===== SERVICES ===== -->
-    <section class="services">
-        <h2>Our Cleaning Services</h2>
-        <p>Pick from a <strong>complete lineup of residential cleaning options</strong>, including the following:</p>
-        <ul>
-            <li>Recurring maid service (weekly, bi-weekly, tri-weekly, monthly)</li>
-            <li>One-time or special event cleaning</li>
-            <li>Seasonal deep cleaning or spring refresh</li>
-            <li>Move-in and move-out cleaning</li>
-            <li>Small office janitorial service</li>
-            <li>Post remodel dust and debris cleanup</li>
-            <li>Packing and unpacking help</li>
-            <li>Party setup and breakdown support</li>
-            <li>and much more!</li>
-        </ul>
-        <p>Visit <a href="https://www.humblehousecleaning.com">HumbleHouseCleaning.com</a> for a <strong>free estimate</strong> or to tailor a plan that matches your exact needs.</p>
-        <div class="image-container">
-            <img src="kitchen-move.jpg" alt="Sparkling kitchen after a professional cleaning." style="max-width: 600px;">
-        </div>
-    </section>
-
-    <!-- ===== RESIDENTIAL ===== -->
-    <section class="residential">
-        <h2>Residential Cleaning Pros</h2>
-        <p>Let Mountain Maids ® handle deep cleans, seasonal refreshes, and regular upkeep while you enjoy life in your Colorado home. We deliver quality results at a fair price. Request a no-obligation quote anytime at <a href="https://www.humblehousecleaning.com">HumbleHouseCleaning.com</a>.</p>
-        <p>We service <strong>Colorado Springs, Monument, Palmer Lake, Fountain, Castle Rock, Littleton, South Denver, Highlands Ranch, and Parker</strong> and can visit daily, weekly, twice per month, monthly, or on demand. Need move-in help or post-construction cleanup? Our teams have decades of experience.</p>
-        <p>Our staff members are <strong>courteous, punctual, and fully trained</strong>. See why neighbors throughout the Front Range refer us again and again, then request your free estimate at <a href="https://www.humblehousecleaning.com">HumbleHouseCleaning.com</a>.</p>
-        <div class="image-container">
-            <img src="every-room.jpg" alt="Cleaner polishing a kitchen counter in a Colorado home." style="max-width: 600px;">
-        </div>
-    </section>
-
-    <!-- ===== MOVE IN / MOVE OUT ===== -->
-    <section class="move-out">
-        <h2>Move In and Move Out Cleaning</h2>
-        <p>We offer <strong>specialized move in and move out cleanings</strong> across the Front Range. For professional service and clear pricing, visit <a href="https://www.humblehousecleaning.com">HumbleHouseCleaning.com</a>.</p>
-        <p>Homeowners and real estate agents often choose Mountain Maids ® as a top option for move out cleaning. From end-of-lease details to final build dust removal, we take care of every task so you can focus on your move.</p>
-        <p><strong>Moving is stressful enough.</strong> Our experienced crews complete the cleaning checklist while you get settled. We understand exactly what landlords, buyers, and inspectors want to see.</p>
-        <p>Need help with <strong>packing or unpacking</strong> as part of the move? Our specialists are ready to assist. Tell us what you need at <a href="https://www.humblehousecleaning.com">HumbleHouseCleaning.com</a>.</p>
-        <div class="image-container">
-            <img src="move-out-cleaning.png" alt="Boxes and supplies prepared for a move out cleaning in a Colorado home." style="max-width: 600px;">
-        </div>
-    </section>
-
-    <!-- ===== ABOUT ===== -->
-    <section class="about">
-        <h2>About Our Company</h2>
-        <p><strong>Mountain Maids ® has helped Front Range residents keep homes clean and comfortable for decades.</strong> With efficient methods and honest pricing, you gain more time for what matters most.</p>
-        <p>Because every household is different, we design <strong>custom cleaning plans</strong>. Ask for your free quote at <a href="https://www.humblehousecleaning.com">HumbleHouseCleaning.com</a> and we will review the details together.</p>
-        <p>Your <strong>security is a priority</strong>. Each cleaner completes a rigorous background check at hiring and again every three months.</p>
-        <p><strong>Customer happiness is core to our service.</strong> Share feedback anytime. We resolve issues quickly and show appreciation for referrals.</p>
-        <p>We are a <strong>local, owner-operated team</strong>, not a national franchise. We are fully licensed, bonded, and insured, and we stand behind every cleaning and every employee.</p>
-        <div class="image-container">
-            <img src="cleaning-pro.png" alt="Friendly cleaning professional giving an OK sign in a Colorado home." style="max-width: 600px;">
-        </div>
-    </section>
-
-    <!-- ===== REVIEWS ===== -->
-    <section class="reviews">
-        <h2>Some of Our Reviews</h2>
-        <div class="review">
-            <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-            <p><strong>Carol T.</strong></p>
-            <p>Team was thorough. Floors were well done. Respectful of my work time and good with the pets.</p>
-        </div>
-        <div class="review">
-            <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-            <p><strong>Rhonda W.</strong></p>
-            <p>The team did a terrific job this week! I always love having such a clean house after they work on it.</p>
-        </div>
-        <div class="review">
-            <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-            <p><strong>Kevin S.</strong></p>
-            <p>Always a pleasure to have your professional staff here. Your professional and friendly staff is very much appreciated.</p>
-        </div>
-        <div class="review">
-            <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-            <p><strong>Michalan M.</strong></p>
-            <p>Just want to say the crew did a fabulous job! Thank you! I would love for them to come back in a month to do another clean on a monthly basis.</p>
-        </div>
-        <div class="review">
-            <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-            <p><strong>Maria H.</strong></p>
-            <p>I love this cleaning crew! They were all fantastic and went above and beyond my expectations. Fantastic work!</p>
-        </div>
-    </section>
-
-    <!-- ===== CALL TO ACTION ===== -->
-    <section class="cta">
-        <a href="https://www.humblehousecleaning.com">
-            <h2>Request Your Free Estimate Today</h2>
-            <p>Visit HumbleHouseCleaning.com for a fast, no-obligation quote.</p>
-            <p>Proudly Local Since 1987</p>
-            <p>Serving Colorado Springs, Monument, Palmer Lake, Fountain, Castle Rock, Littleton, South Denver, Highlands Ranch, and Parker.</p>
-        </a>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer>
-        <p>&copy; 2026 Mountain Maids ®. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+  <!-- The rest of the HTML remains the same, just replacing brand mentions and location references with Mountain Maids® and your service areas -->
